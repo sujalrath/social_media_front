@@ -1,0 +1,377 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+  }
+  :root {
+    --main-white: #ffffff;
+    --main-primary: #fff;
+    --main-purple: #3d117c;
+    --main-purple-dark: #250657;
+    --main-secondary: #ffffff33;
+    --main-black: #000000;
+    --main-gray: #8a8591;
+    --main-purple-light: #d1c2e6;
+    --main-black-light: #222222;
+    --main-gray-middle: #666666;
+    --main-white-light: #ebebeb;
+    --main-blue: #0257bb;
+    --main-black-middle: #000d1c;
+    --main-gray-dark: #ffffff19;
+  }
+
+  .form-group{
+    width: 100%;
+  }
+  
+.form-group .form-control input {
+    /* border: 1px solid #dfe0e1; */
+    width: 100%;
+    padding: 14.29px 40px 12.71px;
+    /* background-color: #FFFFFF1A; */
+    background-color: #ffffff;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--main-purple-dark);
+    font-family: 'Poppins-Regular';
+ 
+}
+
+.form-group .form-control input::placeholder {
+font-size: 16px;
+line-height: 25px;
+font-family: "Poppins-Regular";
+opacity: 1;
+border: none;
+color: #4d586a;
+}
+
+.form-group .form-control .Mui-focused .MuiOutlinedInput-notchedOutline{
+    border-color: transparent;
+border-width: 0px;
+}
+
+.MuiOutlinedInput-root:hover, .MuiOutlinedInput-notchedOutline {
+border-color: transparent !important; 
+ border: none;
+}
+
+.form-control-textarea:focus-visible {
+outline: none !important;
+} 
+
+fieldset {
+border: 0px;
+}
+.search-bar{
+    background-color: #f1f1f1;
+    border-radius: 20px;
+}
+.search-bar input{
+    border: none;
+    background-color: #f1f1f1;
+}
+/* button start */
+.gradient-btn-main .gradient-btn,
+.gradient-btn-main .gradient-btn:hover {
+  background: transparent;
+  border-radius: 25px;
+  font-family: "Poppins-Regular";
+  font-size: 16px;
+  line-height: 23px;
+  color: var(--main-white);
+  text-transform: capitalize;
+  /* box-shadow: 3px 3px 0 0 #01faa3; */
+  border: 1px solid var(--main-white);
+  background-color:blueviolet;
+  padding: 14.39px 40px 12.71px;
+}
+/* button end */
+
+/* dashboard start */
+.user-center-header-main .user-center-header-card{
+    background-color: #f1f1f1;
+    padding: 16px;
+    border-radius: 15px;
+    /* height: 130px; */
+}
+
+.user-center-header-card-lower-right .post-upload-btn,.user-center-header-card-lower-right .post-upload-btn:hover{
+  padding: 5px;
+}
+.user-center-header-card .user-center-header-card-upper,.user-center-header-card .user-center-header-card-lower{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.user-center-header-card .user-center-header-card-lower{
+  margin-top: 10px;
+}
+.user-centre-main .user-post-card-main{
+    border-radius: 15PX;
+    margin-top: 10px;
+    background-color: #f1f1f1;
+}
+.user-post-card-main .user-post{
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
+    object-fit: inherit;
+}
+.user-center-header-card-lower-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.custom-file-upload {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 2px dashed #aaa;
+    border-radius: 8px;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  .custom-file-upload:hover {
+    background-color: #e0e0e0;
+    border-color: #888;
+  }
+  
+  .upload-icon {
+    font-size: 36px;
+    margin-right: 10px;
+    color: #888;
+  }
+  
+  .upload-text {
+    color: #888;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  
+
+  .image-preview {
+    margin-top: 20px;
+    position: relative;
+    /* width: 200px; 
+    height: 200px;  */
+    /* border: 1px solid #ccc; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .image-preview img {
+    /* width: 100%;
+    height: 100%; */
+    object-fit: cover;
+  }
+  .close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    z-index: 1; /* Ensure the close button is above the image */
+  }
+  
+  .close-button:hover {
+    color: #f00; /* Change color on hover */
+  }
+.user-centre-main .comment-control{
+/* border: #000000; */
+}
+.comment-box{
+  overflow: auto;
+  /* height: 150px; */
+  max-height: 150px;
+  margin-top: 10px;
+}
+.main-comment-box{
+  display: flex;
+  flex-direction: column;
+}
+.main-comment-box .main-comment-upper{
+  display: flex;
+}
+.main-comment-box .main-comment-lower{
+  display: flex;
+  justify-content: space-between;
+}
+.main-comment-lower .comment-content{
+  margin: 10px 0px 10px 24px;
+}
+.main-comment-box .comment-name{
+  margin-left: 10px;
+}
+.post-icon-main{
+  display: flex;
+  align-items: center;
+}
+.post-icon-main-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.post-icon-main .comment-icon{
+  margin-left: 10px;
+}
+ .post-icon-main-box .comment-count{
+  margin-right: 15px;
+}
+/* dashbhaord end */
+
+/* message start */
+.message-main{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+/* mnessage end */
+
+.modal-auth-btn-main .btn-main{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.gradient-btn-main {
+  display: flex;
+  justify-content: center;
+}
+
+.user-sidebar-logo{
+  width: 200px;
+  height: 70px;
+  object-fit: cover;
+}
+
+.main-comment-box {
+
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  margin: 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Styles for the selected comment */
+.selected-comment {
+  background-color: #d1e7fd; /* Light blue background for selected comments */
+  border-color: #80bdff; /* Border color for selected comments */
+}
+
+/* Optional: Avatar styling */
+.comment-profile {
+  margin-right: 10px;
+}
+
+/* Optional: Typography styling for the comment content */
+.comment-content {
+  font-size: 14px;
+  color: #333;
+}
+
+/* profile start */
+.profile-inner-main{
+  padding: 90px;
+  background-color: white;
+  height: 80vh;
+}
+
+
+.edit-profile-flex {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  justify-content: center;
+}
+.file-upload-btn-main {
+  position: relative;
+  max-width: max-content;
+}
+.file-upload-btn-main .file-upload-btn,
+.file-upload-btn-main .file-upload-btn:hover {
+  background-color: #ffffff;
+  border-radius: 50%;
+  height: 17px;
+  width: 17px;
+  min-width: 17px;
+  padding: 0px;
+  position: absolute;
+  right: 0px;
+  bottom: 13px;
+  box-shadow: 0px 3px 6px #00000029;
+}
+.upload-profile-img {
+  height: 80px;
+  width: 80px;
+  min-height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.upload-icon-img {
+  height: 10px;
+  width: 10px;
+  object-fit: contain;
+}
+
+.image-error {
+  color: rgb(211, 47, 47);
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.66;
+  letter-spacing: 0.03333em;
+  text-align: left;
+  /* margin: 4px 1px 0px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin: 20px; */
+  padding: 10px;
+}
+/* profile end */
+
+/* notification start */
+.notification-list{
+  height: 400px;
+  overflow: auto;
+}
+
+.add-modal-inner-main{
+  width: 300px;
+}
+/* notiication end */
+
+.comment-profile img{
+  width: 25px;
+  height: 30px;
+  border-radius: 50%;
+
+}
+.comment-content{
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  width: 300px;
+}
+.header-img{
+  width: 40px;
+  border-radius: 50%;
+}
+@media screen and (max-width: 900px) {
+  .comment-content {
+    width: 300px; 
+  }
+}

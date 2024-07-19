@@ -1,0 +1,145 @@
+/* start user dashboard page structure css */
+
+.user-main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+.user-main .dashboard-main {
+  display: flex;
+  width: 100%;
+  height: 89vh;
+}
+
+.user-main .dashboard-header-main {
+  width: 100%;
+  height: 76px;
+  border-bottom: 1px solid black;
+}
+
+.user-main .dashboard-left-main {
+  flex:1;
+  max-width: 360px;
+  width: 100%;
+  /* border-right: 1px solid black; */
+}
+.user-main .dashboard-centre-active{
+  padding: 10px !important;
+}
+.user-main .dashboard-centre-main {
+  flex: 2;
+}
+
+.user-main .dashboard-right-main {
+  flex: 1;
+  max-width: 360px;
+  width: 100%;
+}
+
+.user-main .dashboard-containt-main {
+  /* height: 90vh; */
+  height: 100%;
+  /* padding: 7px 10px 24px 10px; */
+  overflow: auto;
+  background-color: #d1c2e6;
+  padding: 16px 0px 16px 0px;
+}
+
+/* end user dashboard page structure css */
+
+/* start user sidebar css */
+.user-main .user-sidebar-main {
+  /* height: 90vh; */
+  height: 100%;
+
+  background-color: #d1c2e6;
+  padding: 16px 16px 16px 16px;
+  /* left: -300px; */
+  overflow: auto;
+  /* top: 0;
+  width: 300px;
+  z-index: 9999; */
+
+
+}
+.admin-sidebar-deactive{
+  display: none;
+}
+.user-main .user-sidebar-link {
+  color: red;
+}
+
+.user-main .user-sidebar-deactive {
+  flex: 0 0 0px;
+  max-width: 0px;
+  width: 100%;
+  transition: 0.5s all;
+}
+
+.user-main .user-sidebar-list-main {
+  padding: 16px 16px;
+}
+
+.user-main .user-sidebar-list-main .user-sidebar-list {
+  padding: 0px;
+}
+
+.user-main .user-sidebar-list-main .user-sidebar-listitem {
+  padding: 0px;
+}
+
+.user-main .user-sidebar-list-main .user-sidebar-link {
+  font-size: 14px;
+  line-height: 21px;
+  color: black;
+  padding: 10px 12px 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  text-decoration: none;
+}
+
+.user-main .user-sidebar-list-main .user-sidebar-link.active {
+  color: white;
+  background: linear-gradient(45deg, #3e53a0, transparent);
+  border-radius: 4px;
+}
+
+.user-main .user-sidebar-main::-webkit-scrollbar,
+.user-main .dashboard-containt-main::-webkit-scrollbar {
+  width: 0px;
+ 
+}
+.user-main .user-sidebar-main::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.user-main .user-sidebar-main::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.user-main .user-sidebar-main::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.user-sidebar-main .user-sidebar-main-card{
+    border-radius: 15px;
+}
+
+/* start end sidebar css */
+
+/* start admin header css */
+
+.dashboard-header-main .user-header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  /* padding: 2px; */
+  height: 76px;
+}
+/* end admin header css */
+
+.recent-joined{
+  overflow: auto;
+  height: 70vh;
+}
