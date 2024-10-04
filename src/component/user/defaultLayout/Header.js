@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import Index from "../../../container/Index";
-import { Avatar, Skeleton } from "@mui/material";
-import MoreVertIcon from "@mui/icons-material/MoreVert";
+
 import PagesIndex from "../../../container/PagesIndex";
-import { Search } from "@mui/icons-material";
-import Sidebar from "./Sidebar";
+
 import NotificationList from "../../../container/user/pages/notification/NotificationList";
 const Header = (props) => {
   const dispatch = Index.useDispatch()
@@ -59,6 +57,7 @@ setOpenNotificationModel(true)
           <Index.IconButton onClick={handleClick}>
           {user.profile? 
                 <img  
+                alt="header"
                 className="header-img"
                 src={`${PagesIndex.IMAGE_ENDPOINT}${user?.profile}`}
 />

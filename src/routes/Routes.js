@@ -3,7 +3,7 @@ import Login from "../container/user/auth/login/Login";
 import UserPrivateRoutes from "./UserPrivateRoutes";
 import Layout from "../component/user/defaultLayout/Layout";
 import Dashboard from "../container/user/pages/dashboard/Dashboard";
-import Socialkick from "../container/user/pages/Home";
+// import Socialkick from "../container/user/pages/Home";
 import "../container/user/auth/auth.css";
 import RegisterForm from "../container/user/auth/register/Register";
 import Profile from "../container/user/pages/profile/Profile";

@@ -31,7 +31,7 @@ function Sidebar(props) {
   return (
     <>
       <Index.Box
-        className={`user-sidebar-main ${(screen == "Mobile" ? !props.open : props.open) ? "active" : ""
+        className={`user-sidebar-main ${(screen === "Mobile" ? !props.open : props.open) ? "active" : ""
           }`}
       >
 

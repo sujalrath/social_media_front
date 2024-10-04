@@ -13,7 +13,7 @@ import { userLoginValidationSchema, userProfileValidationSchema, userRegisterVal
 import Message from "./user/pages/message/Message";
 
 
-export default{
+const PagesIndex={
     Header,
     Sidebar,
     Svg,
@@ -40,3 +40,5 @@ export default{
 deleteComments,
 Jpg
 }
+
+export default PagesIndex

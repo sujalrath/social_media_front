@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import Index from '../../../Index';
-import { FilterList, Search } from '@mui/icons-material';
 import PagesIndex from '../../../PagesIndex';
 
 
@@ -32,7 +31,7 @@ function Message(props) {
     return (
         <>
             <Index.Box
-                className={`user-sidebar-main ${(screen == "Mobile" ? !props.open : props.open) ? "active" : ""
+                className={`user-sidebar-main ${(screen === "Mobile" ? !props.open : props.open) ? "active" : ""
                     }`}
             >
 

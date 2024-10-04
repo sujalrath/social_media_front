@@ -8,7 +8,7 @@ import { Comment, Label, Send, Share } from "@mui/icons-material";
 
 
 
-export default {
+ const Index = {
     Box,
     TextField,
     Typography,
@@ -70,3 +70,4 @@ export default {
 Formik,
 
 }
+export default Index

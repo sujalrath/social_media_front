@@ -13,7 +13,6 @@ const Dashboard = () => {
   const [loading, setLoading] = useState(false);
   const [postList, setPostList] = useState([]);
   const [disabled, setDisabled] = useState(false);
-  const [liked, setLiked] = useState(false);
   const [showComment, setShowComment] = useState(false);
   const [showCommentId, setShowCommentId] = useState("");
   const [image, setImage] = useState(null);
@@ -34,9 +33,7 @@ const Dashboard = () => {
     setAnchorEl(null);
   };
 
-  const handleLike = () => {
-    setLiked(!liked);
-  };
+ 
 
   const handleImageChange = (event) => {
     const file = event.target.files[0];
@@ -220,6 +217,7 @@ const Dashboard = () => {
               {user.profile? 
                 <img  
                 className="header-img"
+                alt="jaiho"
                 src={`${PagesIndex.IMAGE_ENDPOINT}${user?.profile}`}
 />
               :<Index.Avatar />}
